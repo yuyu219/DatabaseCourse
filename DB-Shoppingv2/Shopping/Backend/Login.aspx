@@ -1,19 +1,15 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Shopping.Backend.Login" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Shopping.Backend.Login" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<style>
+p.ex1 {
+    padding: 0.5cm 1cm 0cm 1cm;
+}
+</style>
+<div class="container body-content" align="center">
         <div style=" align=center; font-family:'Microsoft JhengHei'; font-size:14px; height: 330px; ">
-            <b><font size="20">後台登入</font></b>
-            <br />
+            <div class="ex2" style="">
+                    <p class="ex1"  style="font-size:30pt;font-family:'DFKai-sb';text-align:center;" >——管理者登入——</p>
+            </div>
             <table style=" border:rgb(220, 220, 220); width: 25%; height: 30%; margin-left: 0px; margin-top: 39px;"cellpadding="5";>
                 <tr>
                     <td align="right"; class="auto-style1">帳號&nbsp;</td>
@@ -29,8 +25,5 @@
             </table>
             <asp:Button ID="LoginBtn" runat="server" Height="28px" style="margin-left: 165px; margin-top: 13px" Text="登入" Width="67px" OnClick="LoginBtn_Click" />
         </div>
-    
-    </div>
-    </form>
-</body>
-</html>
+</div>
+</asp:Content>

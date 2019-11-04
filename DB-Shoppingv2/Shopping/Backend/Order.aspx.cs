@@ -40,12 +40,12 @@ namespace Shopping.Backend
                     foreach (DataRow pRow in orderData.Tables["order"].Rows)
                     {
                         string td = "<tr>\r\n" +
-                            "		            <td align=\"center\"; width=\"100\">" + pRow["OrderID"] + "</td>\r\n" +
-                            "		            <td align=\"center\";  width=\"100\">" + pRow["ProductID"] + "</td>\r\n" +
-                            "		            <td align=\"center\"; width=\"80\">" + pRow["CustomerID"] + "</td>\r\n" +
-                            "		            <td align=\"center\"; width=\"80\">" + pRow["Number"] + "</td>\r\n" +
-                            "		            <td align=\"center\"; width=\"100\">" + pRow["Transport"] + "</td>\r\n" +
-                            "		            <td align=\"center\"; width=\"200\">" + pRow["DateTime"] + "</td>\r\n" +
+                            "		            <td>" + pRow["OrderID"] + "</td>\r\n" +
+                            "		            <td>" + pRow["ProductID"] + "</td>\r\n" +
+                            "		            <td>" + pRow["CustomerID"] + "</td>\r\n" +
+                            "		            <td>" + pRow["Number"] + "</td>\r\n" +
+                            "		            <td>" + pRow["Transport"] + "</td>\r\n" +
+                            "		            <td>" + pRow["DateTime"] + "</td>\r\n" +
                             "	              </tr>\r\n";
                         showTableHTML += td;
                     }

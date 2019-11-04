@@ -1,17 +1,13 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NoLogin.aspx.cs" Inherits="Shopping.Backend.NoLogin" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="NoLogin.aspx.cs" Inherits="Shopping.Backend.NoLogin" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+<style>
+p.ex1 {
+    padding: 0.5cm 1cm 0cm 1cm;
+}
+</style>
     <div>
     
     </div>
-    </form>
-</body>
-</html>
+
+</asp:Content>

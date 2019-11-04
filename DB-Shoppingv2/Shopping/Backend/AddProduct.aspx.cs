@@ -113,7 +113,7 @@ namespace Shopping.Backend
                             cmd.ExecuteNonQuery();
                             cmd.Dispose();
                         //}
-                        this.Page.Form.Controls.Add(new LiteralControl("<script>alert('新增成功，可至商品資料確認')</script>"));
+                        this.Page.Form.Controls.Add(new LiteralControl("<script>alert('新增成功，可至商品資料確認');location.href='Products.aspx';</script>"));
                         ProIDTextBox.Text = "";
                         ProNameTextBox.Text = "";
                         ProPriceTextBox.Text = "";
@@ -137,7 +137,7 @@ namespace Shopping.Backend
                             cmd.ExecuteNonQuery();
                             cmd.Dispose();
                         //}
-                        this.Page.Form.Controls.Add(new LiteralControl("<script>alert('新增成功，可至商品資料確認')</script>"));
+                        this.Page.Form.Controls.Add(new LiteralControl("<script>alert('新增成功，可至商品資料確認');location.href='Products.aspx';</script>"));
                         ProIDTextBox.Text = "";
                         ProNameTextBox.Text = "";
                         ProPriceTextBox.Text = "";

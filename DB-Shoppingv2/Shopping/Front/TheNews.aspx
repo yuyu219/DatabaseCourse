@@ -14,7 +14,7 @@ tbody.ex3 {
 <div class="container body-content">
     <!-- row 1 --> 
      <div class="row" style="text-align:left;background-color:white;">
-        <img class="img-responsive"  style="width:25%" src="/image/baby.jpg" onclick="location.href='/Front/IndexPage.aspx'">
+        <img class="img-responsive"  style="width:20%" src="/image/baby.jpg" onclick="location.href='/Default.aspx'">
     </div>
     <!-- row 2 --> 
     <div class="row" style="text-align:center;background-color:rgb(80, 191, 42)">
@@ -28,7 +28,7 @@ tbody.ex3 {
     <!-- row 3 --> 
     <div class="ex2" style="border-style:solid; background-color:lightgray; border-width:0px;">
         <p class="ex1"  style="font-size:30pt;font-family:'DFKai-sb'; text-align:center;" >——最新公告——</p>
-        <table class="ex3" border="1" style="font-size:30pt;font-family:'DFKai-sb'; text-align:center;" >
+        <table width="100%" class="ex3" border="1" style="font-size:30pt;font-family:'DFKai-sb'; text-align:center;" >
             <tbody>
                 <tr>
                     <td>時間</td>

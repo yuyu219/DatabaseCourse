@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -118,7 +119,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Front\AboutWe.aspx" />
-    <Content Include="Front\IndexPage.aspx" />
     <Content Include="Front\ShoppingStep.aspx" />
     <Content Include="Front\ShowItem.aspx" />
     <Content Include="Front\ShowProduct.aspx" />
@@ -131,6 +131,7 @@
     <Content Include="image\step1-2.png" />
     <Content Include="image\step1.png" />
     <Content Include="image\step2.png" />
+    <Content Include="Default.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -168,7 +169,7 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Default.aspx" />
+    <Content Include="Default2.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Front\Buy.aspx" />
@@ -263,12 +264,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front\AboutWe.aspx.cs">
       <DependentUpon>AboutWe.aspx</DependentUpon>
@@ -276,13 +277,6 @@
     </Compile>
     <Compile Include="Front\AboutWe.aspx.designer.cs">
       <DependentUpon>AboutWe.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Front\IndexPage.aspx.cs">
-      <DependentUpon>IndexPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Front\IndexPage.aspx.designer.cs">
-      <DependentUpon>IndexPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Front\ShoppingStep.aspx.cs">
       <DependentUpon>ShoppingStep.aspx</DependentUpon>
@@ -321,6 +315,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Front\Buy.aspx.cs">

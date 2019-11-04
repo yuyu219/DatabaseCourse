@@ -22,7 +22,6 @@ namespace Shopping.shopping_process
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            CheckBoxList1.SelectedIndex = 0;
             string id = Convert.ToString(Request.QueryString["id"]);
            // Response.Write("<hr />" + id + "<hr />");
             SqlConnection Conn = new SqlConnection(WebConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -51,16 +50,16 @@ namespace Shopping.shopping_process
             currentTime = System.DateTime.Now;
             String ProNumber = ProNumTextBox.Text.Trim();
             int pronum = Convert.ToInt32(ProNumber);
-            String trans = "7-11";
-            if (CheckBoxList1.SelectedIndex == 0)
+            String trans = "";
+            if (RadioButtonList1.SelectedIndex == 0)
             {
                 trans = "7-11";
             }
-            else if (CheckBoxList1.SelectedIndex == 1)
+            else if (RadioButtonList1.SelectedIndex == 1)
             {
                 trans = "全家";
             }
-            else if (CheckBoxList1.SelectedIndex == 2)
+            else if (RadioButtonList1.SelectedIndex == 2)
             {
                 trans = "宅配";
             }
@@ -68,9 +67,10 @@ namespace Shopping.shopping_process
             String phone = CusPhoneTextBox.Text;
             String address = AddressTextBox.Text;
             String email = EmailTextBox.Text;
-            String CustoID = Convert.ToString(currentTime.Year-1911) + Convert.ToString(currentTime.Month) + Convert.ToString(currentTime.Day) + Convert.ToString(currentTime.Hour) + Convert.ToString(currentTime.Minute) + Convert.ToString(currentTime.Second);
+            String CustoID = Convert.ToString(currentTime.Year-1911) + currentTime.ToString("MM") + currentTime.ToString("dd") + currentTime.ToString("HH") + currentTime.ToString("mm") + currentTime.ToString("ss");
+            //String CustoID = Convert.ToString(currentTime.Year - 1911) + Convert.ToString(currentTime.Month) + Convert.ToString(currentTime.Day) + Convert.ToString(currentTime.Hour) + Convert.ToString(currentTime.Minute) + Convert.ToString(currentTime.Second);
             String OrderID = CustoID;
-            string DateTime = currentTime.ToString("f");
+            string DateTime = currentTime.ToString("F");
             //Response.Write("<hr />" + CustoID + "&nbsp; " + DateTime +"<hr />");
             bool allow = true;
             if (ProNumber.Length == 0)
@@ -101,6 +101,11 @@ namespace Shopping.shopping_process
             else if (email.Length == 0)
             {
                 this.Page.Form.Controls.Add(new LiteralControl("<script>alert('未填寫Email')</script>"));
+                allow = false;
+            }
+            else if (trans == "")
+            {
+                this.Page.Form.Controls.Add(new LiteralControl("<script>alert('未選擇運送方式')</script>"));
                 allow = false;
             }
 
@@ -136,6 +141,11 @@ namespace Shopping.shopping_process
                 }
                 Response.Redirect("SucessBuy.aspx");
             }
+        }
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine("1");
         }
     }
 }

@@ -36,19 +36,19 @@ namespace Shopping.Front
                 if (number == 16)
                     break;
                 id = Convert.ToString(pRow["ProductID"]);
-                string td = "            <div class=\"col-lg-3 col-md-4 col-sm-6 ex1\"; style=\"border-style:solid; border-color:lightgray; border-width:1px;\"; onclick=\"location.href = '/Front/ShowItem.aspx?id=" + id + "'\" class=\"btn_marginless\">\r\n" +
-                            "                <a>\r\n";
+                string td = "            <div class=\"col-lg-3 col-md-4 col-sm-6 ex1\"; style=\"align:\"center\" border-style:solid; border-color:lightgray; border-width:1px;\"; onclick=\"location.href = '/Front/ShowItem.aspx?id=" + id + "'\" class=\"btn_marginless\">\r\n" +
+                            "                \r\n";
 
                 if (Convert.ToString(pRow["Picture"]).Length != 0)
                 {
-                    td += "                    <p><img src=\"/Backend/ImageShow.ashx?id=" + id + "\"; style =\"width:280x; height:220px\";  class=\"img-responsive\"/>" + "</p>\r\n";
+                    td += "                    <div class=\"frame\"><img class=\"ex1\"; src=\"/Backend/ImageShow.ashx?id=" + id + "\"; />" + "</div>\r\n";
                 }
                 else
                 {
-                    td += "                    <p><img src=\"/Backend/image/no-photo-grey_1x.png\"; style =\"width:280px; height:220px\";  class=\"img-responsive\"/>" + "</p>\r\n";
+                    td += "                    <div  class=\"frame\"><img class=\"ex1\"; src=\"/Backend/image/no-photo-grey_1x.png\"; />" + "</div>\r\n";
                 }
 
-                td += "                    <p align=\"center\"><font size=\"5\"; font-family='Microsoft JhengHei'>" + pRow["Name"] + "&nbsp;&nbsp;&nbsp;&nbsp;$" + pRow["Price"] + "</font></p>\r\n" +
+                td += "                    <a><p style=\"padding-top:10px\"><font size=\"5\"; font-family='Microsoft JhengHei'>" + pRow["Name"] + "&nbsp;&nbsp;&nbsp;&nbsp;$" + pRow["Price"] + "</font></p>\r\n" +
                       "                </a>\r\n        </div>\r\n";
                 showTableHTML += td;
                 number++;

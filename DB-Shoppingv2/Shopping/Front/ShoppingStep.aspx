@@ -17,7 +17,7 @@ img.ex4 {
 <div class="container body-content">
     <!-- row 1 --> 
      <div class="row" style="text-align:left;background-color:white;">
-        <img class="img-responsive"  style="width:25%" src="/image/baby.jpg" onclick="location.href='/Front/IndexPage.aspx'">
+        <img class="img-responsive"  style="width:20%" src="/image/baby.jpg" onclick="location.href='/Default.aspx'">
     </div>
     <!-- row 2 --> 
     <div class="row" style="text-align:center;background-color:rgb(80, 191, 42)">
@@ -37,7 +37,7 @@ img.ex4 {
         <p class="ex2"  style="font-size:18pt;font-family:'DFKai-sb'; " >Step2：會進入此項產品的詳細介紹，如果要購買的話，點擊右下角的前往購買(ex:紅框)</p>
             <p class="ex2"><img class="img-responsive"  style="width:70%; border-style:solid;border-width:1px;" src="/image/step2.png"></p>
         <p class="ex2"  style="font-size:18pt;font-family:'DFKai-sb'; " >Step3：填入資料後點擊送出</p>
-            <p class="ex2"><img class="img-responsive"  style="width:70%; border-style:solid;border-width:1px;" src="/image/step2.png"></p>
+            <p class="ex2"><img class="img-responsive"  style="width:70%; border-style:solid;border-width:1px;" src="/image/step3.png"></p>
     </div>
 </div>
 </asp:Content>

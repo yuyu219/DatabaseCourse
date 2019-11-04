@@ -42,16 +42,9 @@
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="/Front/IndexPage.aspx">首頁</a>
-                </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav" style="text-align:right">
+                        <li><a runat="server" href="/Default.aspx">購物首頁</a></li>
                         <li><a runat="server" href="/Backend/Login.aspx">後台登入</a></li>
                     <!--    <li><a runat="server" href="~/About">關於</a></li>
                         <li><a runat="server" href="~/Contact">連絡人</a></li>-->
@@ -64,7 +57,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - 資料庫系統設計的期末專題</p>
+                <p>&copy; 2014 - 資料庫系統設計的期末專題</p>
             </footer>
         </div>
 

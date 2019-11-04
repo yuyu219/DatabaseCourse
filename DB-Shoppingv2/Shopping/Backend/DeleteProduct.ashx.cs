@@ -26,6 +26,15 @@ namespace Shopping.Backend
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 cmd.Dispose();
+
+                /*sql = "TRUNCATE TABLE Customers";
+                cmd = new SqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();
+                sql = "TRUNCATE TABLE Orders";
+                cmd = new SqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                cmd.Dispose();*/
             }
             /*
             HttpRequest Request = context.Request;

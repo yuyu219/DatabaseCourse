@@ -11,7 +11,7 @@ namespace Shopping.Front
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("<script>alert('您已購買成功!'); location.href='IndexPage.aspx'; </script>");
+            Response.Write("<script>alert('您已購買成功!'); location.href='/Default.aspx'; </script>");
         }
     }
 }

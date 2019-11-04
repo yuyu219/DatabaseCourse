@@ -52,7 +52,7 @@ namespace Shopping.Front
                     if (Convert.ToString(oRow["CustomerID"]) == Convert.ToString(cRow["CustomerID"]))
                     {
                         string name = Convert.ToString(cRow["Name"]);
-                        td += "                <td>&nbsp;" + name[0] + "XX&nbsp;</td>\r\n";
+                        td += "                <td>&nbsp;" + name[0] + "ＯＯ&nbsp;</td>\r\n";
                     }
                 }
                 foreach (DataRow pRow in productData.Tables["Product"].Rows)

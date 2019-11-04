@@ -1,23 +1,40 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ShowProduct.aspx.cs" Inherits="Shopping.Front.ShowProduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 <style>
+div.ex2 {
+    padding: 1cm 1cm 1cm 1cm;
+}
+p.ex1 {
+    padding: 0cm 1cm 0cm 1cm;
+}
+tbody.ex3 {
+    padding: 0cm 0cm 0cm 4cm;
+}
 div.ex1 {
     padding: 0.5cm 0.5cm 0cm 0.5cm;
 }
-p.ex1 {
-    padding: 0.5cm 1cm 0cm 1cm;
+img.ex1 {  
+    max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.frame {  
+    width:270px;
+    height:250px;
+    position: relative;
 }
 </style>
-<head>
-   <title>Bootstrap 实例 - 分页的状态</title>
-   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <script src="/scripts/jquery.min.js"></script>
-   <script src="/bootstrap/js/bootstrap.min.js"></script>
-</head>
 <div class="container body-content">
     <!-- row 1 --> 
      <div class="row" style="text-align:left;background-color:white;">
-        <img class="img-responsive"  style="width:25%" src="/image/baby.jpg" onclick="location.href='/Front/IndexPage.aspx'">
+        <img class="img-responsive"  style="width:20%" src="/image/baby.jpg" onclick="location.href='/Default.aspx'">
     </div>
     <!-- row 2 --> 
     <div class="row" style="text-align:center;background-color:rgb(80, 191, 42)">
@@ -32,10 +49,10 @@ p.ex1 {
             <p class="ex1"  style="font-size:30pt;font-family:'DFKai-sb';text-align:center;" >——商品清單——</p>
     </div>
         <!-- row 3 --> 
-     <div class="row btn-group btn-group-vertical " style="text-align:left;"> 
-        <div class="row ex1" style="height:1300px; ">
+     <div class="row btn-group btn-group-vertical " style="text-align:center;height:auto;"> 
+        <!--div class="row ex1" style="height:auto; "-->
             <asp:Literal ID="indexitem" runat="server" />
-        </div>
+        <!--/div-->
     </div>
     <!-- row 4 --> 
     <!--<ul class="pagination">
